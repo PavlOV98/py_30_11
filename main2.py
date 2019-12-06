@@ -23,5 +23,6 @@ tasks = [
     ioloop.create_task(cash(1)),
     ioloop.create_task(food(2))
 ]
+
 ioloop.run_until_complete(asyncio.wait(tasks))
 ioloop.close()
